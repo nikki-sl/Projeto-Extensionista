@@ -1,0 +1,446 @@
+/* Variáveis de Cores e Estilos Globais */
+:root {
+    --primary-color: #588b8b;
+    --primary-dark: #3a6060;
+    --secondary-color: #d89682;
+    --secondary-light: #fbebe6;
+    --bg-light: #faf7f2;
+    --card-bg: #ffffff;
+    --text-color: #2b2b2b;
+    --text-muted: #666666;
+    --border-color: #e5dfd5;
+    --emergency-bg: #fff0f0;
+    --emergency-border: #e63946;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header / Menu Superior */
+header {
+    background-color: #ffffff;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.logo i {
+    color: var(--secondary-color);
+    margin-right: 8px;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.nav-btn {
+    background-color: var(--secondary-color);
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.nav-btn:hover {
+    background-color: #c5826f;
+}
+
+/* Layout Principal */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Banner Principal */
+.banner {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 3.5rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    box-shadow: var(--shadow);
+}
+
+.banner h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.banner p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 1.8rem auto;
+    opacity: 0.95;
+}
+
+.banner-btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.banner-btn:hover {
+    background-color: #c5826f;
+    transform: translateY(-2px);
+}
+
+/* Seções */
+.section-block {
+    margin-bottom: 3.5rem;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    color: var(--primary-dark);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-title i {
+    color: var(--secondary-color);
+}
+
+.subtitle {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+}
+
+/* Grids e Cards Gerais */
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Podcasts */
+.podcast-card .card-icon {
+    width: 45px;
+    height: 45px;
+    background-color: var(--secondary-light);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.podcast-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.podcast-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+audio {
+    width: 100%;
+    height: 35px;
+}
+
+/* Vídeos */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.3rem;
+}
+
+.video-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Layout Assimétrico: Cursos + Sidebar Sites */
+.flex-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.courses-area {
+    flex: 3;
+    min-width: 300px;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+}
+
+.course-card {
+    position: relative;
+}
+
+.card-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--secondary-light);
+    color: var(--secondary-color);
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 10px;
+}
+
+.course-card h3 {
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-card p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
+    flex-grow: 1;
+}
+
+.btn-card {
+    display: block;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.btn-card:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Sidebar de Sites */
+.sites-sidebar {
+    flex: 1;
+    min-width: 260px;
+    background-color: var(--card-bg);
+    border: 2px dashed var(--secondary-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.sites-sidebar h3 {
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+}
+
+.sites-sidebar p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.sites-list {
+    list-style: none;
+}
+
+.sites-list li {
+    margin-bottom: 0.8rem;
+}
+
+.sites-list a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 6px;
+    background-color: var(--bg-light);
+    transition: background-color 0.2s;
+}
+
+.sites-list a:hover {
+    background-color: var(--secondary-light);
+    color: var(--secondary-color);
+}
+
+/* Seção de Suporte e Contatos */
+.support-section {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.support-card {
+    background-color: var(--bg-light);
+    padding: 1.2rem;
+    border-radius: 10px;
+}
+
+.support-card h3 {
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.emergency {
+    background-color: var(--emergency-bg);
+    border: 1px solid var(--emergency-border);
+}
+
+.emergency h3 {
+    color: var(--emergency-border);
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+    border-bottom: 1px dashed #e0c8c8;
+    font-size: 0.95rem;
+}
+
+.contact-list span {
+    font-weight: bold;
+    color: var(--emergency-border);
+}
+
+.materials p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.btn-download {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    background-color: #ffffff;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn-download:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    border-top: 1px solid var(--border-color);
+    background-color: #ffffff;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+    }
+
+    .banner h1 {
+        font-size: 1.6rem;
+    }
+
+    .flex-layout {
+        flex-direction: column;
+    }
+}
