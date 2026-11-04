@@ -43,9 +43,96 @@
       }
     }
   },
-  "podcasts": [],
-  "videos": [],
-  "courses": [],
+  "podcasts": [
+    {
+      "id": "podcast-mulheres-que-sentem-quem-cuida",
+      "title": "Mulheres que Sentem - Quem cuida da mulher que precisa dar conta de tudo",
+      "description": "Episódio sobre a sobrecarga feminina e o cuidado com mulheres que acumulam responsabilidades.",
+      "url": "https://open.spotify.com/episode/0P7kXG0KbB8s7kLbwnCRjS?si=FoEykuXPTrCOtk4m_StMeQ",
+      "platform": "Spotify"
+    },
+    {
+      "id": "podcast-mulher-voce-precisa-relaxar",
+      "title": "Mulher, você precisa relaxar",
+      "description": "Episódio em áudio sobre a importância de desacelerar e cuidar de si.",
+      "url": "https://open.spotify.com/episode/3YRXbRmSdNrSzGuC2VCgDO",
+      "platform": "Spotify"
+    },
+    {
+      "id": "podcast-violencia-contra-a-mulher",
+      "title": "Violência contra a mulher",
+      "description": "Programa com conteúdos em áudio sobre violência contra a mulher.",
+      "url": "https://open.spotify.com/show/0k1hKthxHxR31I6HTcuxJR",
+      "platform": "Spotify"
+    }
+  ],
+  "videos": [
+    {
+      "id": "video-violencia-mulheres-tipos-lei",
+      "title": "Violência contra as Mulheres: tipos de violência e o que diz a lei",
+      "description": "Conheça diferentes formas de violência contra as mulheres e informações sobre a legislação de proteção.",
+      "url": "https://www.youtube.com/watch?v=gCG4ZjUinRk",
+      "platform": "YouTube"
+    },
+    {
+      "id": "video-direitos-mulheres-equidade",
+      "title": "Direitos das Mulheres: o que são e como surgiram? | Projeto Equidade",
+      "description": "Conteúdo sobre a origem dos direitos das mulheres e a construção histórica dessas garantias.",
+      "url": "https://www.youtube.com/watch?v=wQHeL2hHe7g",
+      "platform": "YouTube"
+    },
+    {
+      "id": "video-amor-proprio-autoestima-anahy",
+      "title": "10 formas de fortalecer seu AMOR PRÓPRIO e AUTOESTIMA com Dra Anahy D’Amico",
+      "description": "Orientações sobre amor-próprio e autoestima com a participação da Dra. Anahy D’Amico.",
+      "url": "https://www.youtube.com/watch?v=j9WmsR4Bn-g",
+      "platform": "YouTube"
+    },
+    {
+      "id": "video-trabalho-em-casa-maes-renda-extra",
+      "title": "10 opções de TRABALHO EM CASA para MÃES ou RENDA EXTRA",
+      "description": "Ideias de trabalho em casa para mães e alternativas para gerar renda extra.",
+      "url": "https://www.youtube.com/watch?v=kWmjLajEWsM",
+      "platform": "YouTube"
+    },
+    {
+      "id": "video-defesa-pessoal-mulheres",
+      "title": "DEFESA PESSOAL PARA MULHERES | técnicas para se defender de machão",
+      "description": "Vídeo com técnicas e orientações de defesa pessoal voltadas a mulheres.",
+      "url": "https://www.youtube.com/watch?v=O7iXuFmVFJM",
+      "platform": "YouTube"
+    }
+  ],
+  "courses": [
+    {
+      "id": "curso-gestao-financeira-sebrae",
+      "title": "Gestão financeira",
+      "description": "O curso apresenta fundamentos de gestão financeira voltados a empreendedores que buscam estruturar ou iniciar um negócio de forma sustentável.",
+      "url": "https://ce.loja.sebrae.com.br/gest-o-financeira-1-372000026927",
+      "category": "Gestão e finanças"
+    },
+    {
+      "id": "curso-aprender-a-empreender-sebrae",
+      "title": "Aprender a empreender",
+      "description": "Conheça as principais características que um empreendedor deve ter e aprenda os conceitos básicos sobre empreendedorismo, marketing e finanças. Se você está querendo abrir um negócio ou se acabou de abrir este curso é para você!",
+      "url": "https://ce.loja.sebrae.com.br/aprender-a-empreender-1-372000001028",
+      "category": "Empreendedorismo"
+    },
+    {
+      "id": "curso-como-precificar-produtos-servicos",
+      "title": "Como Precificar seus Produtos ou Serviços",
+      "description": "Você aprenderá os fundamentos da precificação de forma prática e acessível. Ao longo das aulas, entenderá como calcular custos, definir margens de lucro, analisar concorrentes e aplicar métodos de precificação que ajudam a transformar conhecimento financeiro em decisões estratégicas para o seu negócio.",
+      "url": "https://kultivi.com/curso/como-precificar-seus-produtos-ou-servicos",
+      "category": "Gestão e finanças"
+    },
+    {
+      "id": "curso-modelagem-plana-roupas-femininas",
+      "title": "CURSO COMPLETO DE MODELAGEM PLANA DE ROUPAS FEMININAS - MAGIA DA MODELAGEM",
+      "description": "Curso de modelagem plana de roupas femininas, com técnicas para desenvolver peças do zero.",
+      "url": "https://youtu.be/7zHMsaWbakE?si=3Eb7wEn2soNjpyQr",
+      "category": "Moda e costura"
+    }
+  ],
   "supportChannels": [
     {
       "id": "central-180",
