@@ -1,0 +1,123 @@
+{
+  "site": {
+    "name": "Rede de Apoio à Mulher",
+    "eyebrow": "Informação, acolhimento e caminhos de apoio",
+    "heroTitle": "Conhecimento também é uma forma de proteção.",
+    "heroDescription": "Um espaço para encontrar informação confiável, conteúdos educativos e caminhos de apoio. Aqui, você pode ouvir, aprender e descobrir onde buscar acolhimento.",
+    "heroPrimaryCta": "Encontrar canais de apoio",
+    "heroSecondaryCta": "Explorar conteúdos",
+    "introLabel": "Uma rede de informação e cuidado",
+    "introTitle": "Você não precisa saber tudo agora. Comece por aqui.",
+    "introDescription": "Reunimos materiais e serviços para ajudar você a encontrar orientação, fortalecer sua autonomia e conhecer seus direitos.",
+    "footerDescription": "Informação, acolhimento e acesso a caminhos de apoio para mulheres.",
+    "sections": {
+      "support": {
+        "eyebrow": "Precisa de orientação?",
+        "title": "Canais de apoio",
+        "description": "Encontre serviços de atendimento e saiba onde buscar ajuda. Em situações de emergência, procure os serviços indicados abaixo."
+      },
+      "podcasts": {
+        "eyebrow": "Escuta e informação",
+        "title": "Podcasts",
+        "description": "Conversas, histórias e conteúdos em áudio para informar, acolher e ampliar perspectivas."
+      },
+      "videos": {
+        "eyebrow": "Conteúdo para assistir",
+        "title": "Vídeos",
+        "description": "Materiais audiovisuais para conhecer direitos, identificar redes de proteção e compartilhar informação."
+      },
+      "courses": {
+        "eyebrow": "Aprendizado e autonomia",
+        "title": "Cursos e capacitações",
+        "description": "Oportunidades gratuitas de formação, desenvolvimento profissional e fortalecimento da autonomia."
+      },
+      "materials": {
+        "eyebrow": "Informação para consultar e compartilhar",
+        "title": "Nossos materiais",
+        "description": "Acesse gratuitamente materiais informativos preparados para orientar e apoiar."
+      },
+      "usefulLinks": {
+        "eyebrow": "Formação e oportunidades",
+        "title": "Links úteis",
+        "description": "Acesso direto a portais de apoio, capacitação e desenvolvimento profissional."
+      }
+    }
+  },
+  "podcasts": [],
+  "videos": [],
+  "courses": [],
+  "supportChannels": [
+    {
+      "id": "central-180",
+      "name": "Central de Atendimento à Mulher",
+      "number": "180",
+      "description": "Orientação, acolhimento e informações sobre direitos e serviços da rede de atendimento.",
+      "type": "Atendimento à mulher"
+    },
+    {
+      "id": "policia-190",
+      "name": "Polícia Militar",
+      "number": "190",
+      "description": "Acione em situações de emergência ou quando houver risco imediato.",
+      "type": "Emergência"
+    },
+    {
+      "id": "samu-192",
+      "name": "SAMU",
+      "number": "192",
+      "description": "Atendimento móvel de urgência em situações de emergência de saúde.",
+      "type": "Emergência de saúde"
+    },
+    {
+      "id": "direitos-100",
+      "name": "Disque Direitos Humanos",
+      "number": "100",
+      "description": "Canal para denúncias de violações de direitos humanos.",
+      "type": "Direitos humanos"
+    }
+  ],
+  "protectionNetwork": [
+    {
+      "title": "Apoio psicológico",
+      "description": "Grupos de escuta e atendimento comunitário gratuito."
+    },
+    {
+      "title": "Apoio jurídico",
+      "description": "Orientação legal e informações sobre atendimento pela Defensoria Pública."
+    }
+  ],
+  "materials": {
+    "url": "https://drive.google.com/drive/folders/1amOIw0AjRuB1z5BpmQyQNAielrFiDzY6?usp=sharing",
+    "buttonLabel": "Acessar nosso Drive"
+  },
+  "usefulLinks": [
+    {
+      "id": "sebrae-delas",
+      "title": "Sebrae Delas",
+      "description": "Iniciativas de apoio ao empreendedorismo feminino.",
+      "url": "https://sebrae.com.br/",
+      "category": "Empreendedorismo"
+    },
+    {
+      "id": "fundacao-bradesco",
+      "title": "Fundação Bradesco",
+      "description": "Cursos gratuitos em diversas áreas do conhecimento.",
+      "url": "https://www.ev.org.br/cursos",
+      "category": "Cursos gratuitos"
+    },
+    {
+      "id": "aprendamais-mec",
+      "title": "Aprenda Mais — MEC",
+      "description": "Cursos gratuitos e on-line em diferentes áreas.",
+      "url": "https://aprendamais.mec.gov.br/",
+      "category": "Formação"
+    },
+    {
+      "id": "senac-carreiras",
+      "title": "Senac — Carreiras e oportunidades",
+      "description": "Conteúdos e oportunidades para desenvolvimento profissional.",
+      "url": "https://carreiras.ce.senac.br/",
+      "category": "Carreira"
+    }
+  ]
+}

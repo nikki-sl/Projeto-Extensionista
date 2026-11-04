@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#532564">
+  <title>Painel administrativo — Rede de Apoio à Mulher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <header class="admin-header"><a class="admin-brand" href="index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span><strong>Rede de Apoio à Mulher</strong><small>Painel de conteúdo</small></span></a><a class="back-site" href="index.html">← Ver site</a></header>
+  <main class="admin-shell">
+    <section class="admin-welcome"><div><p class="eyebrow">Área de gerenciamento</p><h1>Gerencie os conteúdos do site</h1><p>Edite textos, organize os materiais e atualize os canais de apoio em um só lugar.</p></div><div class="welcome-icon" aria-hidden="true">✳</div></section>
+    <div class="workflow-note"><span class="workflow-icon">i</span><div><strong>Como as alterações chegam ao site?</strong><p>As edições ficam neste navegador como rascunho. Ao finalizar, exporte o arquivo <code>conteudos.json</code> e substitua o arquivo da pasta <code>data</code> no GitHub. Depois da publicação, todos verão a atualização.</p></div></div>
+    <div class="admin-toolbar"><div class="status-line"><span class="status-dot" id="statusDot"></span><span id="statusText">Carregando conteúdos…</span></div><div class="toolbar-actions"><button class="button button-light" id="importButton" type="button">Importar JSON</button><input type="file" id="importFile" accept=".json,application/json" hidden><button class="button button-primary" id="exportButton" type="button">Exportar JSON <span aria-hidden="true">↓</span></button></div></div>
+    <div class="admin-layout">
+      <aside class="admin-sidebar" aria-label="Seções do painel"><button class="side-tab active" data-tab="texts"><span>✎</span> Textos do site</button><button class="side-tab" data-tab="podcasts"><span>◖</span> Podcasts</button><button class="side-tab" data-tab="videos"><span>▶</span> Vídeos</button><button class="side-tab" data-tab="courses"><span>▣</span> Cursos</button><button class="side-tab" data-tab="support"><span>♡</span> Canais de apoio</button><button class="side-tab" data-tab="materials"><span>▤</span> Materiais e links</button></aside>
+      <section class="editor-panel" id="editorPanel" aria-live="polite"></section>
+    </div>
+    <div class="admin-footer"><span>Rede de Apoio à Mulher · Gerenciador de conteúdo</span><button id="resetDraft" class="reset-button" type="button">Descartar rascunho local</button></div>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/admin.js" defer></script>
+</body>
+</html>
